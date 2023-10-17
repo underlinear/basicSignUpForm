@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Sign-Up Form</title>
+</head>
+<body>
+    <div id="bg-wallpaper"></div>
+    <main>
+        <p>This is not a real online service! You know you need something
+        like this in your life to help you realize your deepest dreams.
+        Sign up now to get started.<br>You know you want to.</p>
+        <form action="signup.php">
+            <h2>Let's do this!</h2>
+            <div>
+                <label for="fname">FIRST NAME</label>
+                <input type="text" id="fname" name="fname">
+                <label for="lname">LAST NAME</label>
+                <input type="text" id="lname" name="lname">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" name="email">
+                <label for="phnum">PHONE NUMBER</label>
+                <input type="number" id="phnum" name="phnum">
+                <label for="password">PASSWORD</label>
+                <input type="password" id="password" name="password">
+                <label for="confpassword">CONFIRM PASSWORD</label>
+                <input type="password" id="confpassword" name="confpassword">
+            </div>
+            <button type="submit" id="submit">Create Account</button>
+        </form>
+        <p>Already have an account?<a href="login.html">Log In</a></p>
+    </main>
+</body>
+</html>
