@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,34 +8,41 @@
     <link href="style.css" rel="stylesheet">
     <title>Sign-Up Form</title>
 </head>
+
 <body>
-    <div id="bg-wallpaper"></div>
+    <div id="bg-wallpaper">
+        <div id="overlay-wrapper">
+            <div id="overlay-text">ODIN</div>
+        </div>
+    </div>
     <main>
         <p id="desc1">This is not a real online service! You know you need something
-        like this in your life to help you realize your deepest dreams.
-        <br>Sign up now to get started.</p>
-        <p id="desc2">You know you want to.</p>
-        <div id="signupform">
-        <form action="signup.php">
-            <h2>Let's do this!</h2>
-            <div>
-                <label for="fname">FIRST NAME</label>
-                <input type="text" id="fname" name="fname">
-                <label for="lname">LAST NAME</label>
-                <input type="text" id="lname" name="lname">
-                <label for="email">EMAIL</label>
-                <input type="email" id="email" name="email">
-                <label for="phnum">PHONE NUMBER</label>
-                <input type="number" id="phnum" name="phnum">
-                <label for="password">PASSWORD</label>
-                <input type="password" id="password" name="password">
-                <label for="confpassword">CONFIRM PASSWORD</label>
-                <input type="password" id="confpassword" name="confpassword">
-            </div>
-            <button type="submit" id="submit">Create Account</button>
-        </form>
+            like this in your life to help you realize your deepest dreams.
+            <br>Sign up now to get started.
+        </p>
+        <p id="desc2">You <i>know</i> you want to.</p>
+        <div id="signup-form">
+            <form action="signup.php">
+                <h2>Let's do this!</h2>
+                <div id="input-section">
+                    <label for="fname">FIRST NAME</label>
+                    <input type="text" id="fname" name="fname">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" name="email">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password">
+                    <label for="lname">LAST NAME</label>
+                    <input type="text" id="lname" name="lname">
+                    <label for="phnum">PHONE NUMBER</label>
+                    <input type="number" id="phnum" name="phnum">
+                    <label for="confpassword">CONFIRM PASSWORD</label>
+                    <input type="password" id="confpassword" name="confpassword">
+                </div>
+                <button type="submit" id="submit">Create Account</button>
+            </form>
         </div>
-        <p>Already have an account?<a href="login.html">Log In</a></p>
+        <p id="login-link">Already have an account?<a href="login.html">Log In</a></p>
     </main>
 </body>
+
 </html>
